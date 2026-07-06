@@ -15,8 +15,6 @@ This means the model learns whether the next day is expected to be warmer or col
 
 The training set contains 2019–2024 observations from Dongducheon, Seoul, Ganghwa, Incheon, Icheon, and Yangpyeong stations. The test set contains shuffled observations from Paju and Suwon stations. The competition notice stated that the test dataset was updated while the rest of the project remained unchanged, so the trained modeling logic can be reused and inference should be rerun on the updated test file.
 
-Only five test submissions are allowed per day, so local validation is used before generating the final submission file.
-
 ## Pipeline Architecture
 
 The full workflow is organized as a reproducible preprocessing, feature-engineering, and split-specific ensemble pipeline.
