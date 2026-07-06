@@ -22,7 +22,7 @@ Only five test submissions are allowed per day, so local validation is used befo
 The full workflow is organized as a reproducible preprocessing, feature-engineering, and split-specific ensemble pipeline.
 
 <p align="center">
-  <img src="image/temperature_pipeline.png" width="1000" alt="Temperature prediction pipeline architecture">
+  <img src="image/temperature_pipeline.jpg" width="1000" alt="Temperature prediction pipeline architecture">
 </p>
 
 ## Repository Structure
