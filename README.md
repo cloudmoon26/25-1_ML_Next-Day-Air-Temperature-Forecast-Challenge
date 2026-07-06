@@ -138,47 +138,5 @@ The code evaluates the wet and dry models separately using 5-fold cross-validati
 ```text
 scoring = neg_root_mean_squared_error
 ```
-
 After validation, the final wet and dry models are trained on all available rows from their corresponding subsets.
 
-## Usage
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the full pipeline with cross-validation:
-
-```bash
-python main.py \
-  --train_path /content/train_dataset.csv \
-  --test_path /content/test_dataset.csv \
-  --output_path /content/submission.csv
-```
-
-Run final training and prediction only:
-
-```bash
-python main.py \
-  --train_path /content/train_dataset.csv \
-  --test_path /content/test_dataset.csv \
-  --output_path /content/submission.csv \
-  --skip_cv
-```
-
-## Submission
-
-The model predicts the residual target for each test row. Predictions from the wet and dry models are merged back into the original test order and saved as a CSV file.
-Follow the competition sample file when naming the prediction column. If the sample submission uses `target`, the final file should follow this format:
-
-```text
-id,target
-0,0.1234
-1,-0.3812
-...
-```
-
-
-This project focuses on a reproducible machine-learning workflow rather than rule-based shortcuts. The preprocessing, validation, model training, and submission steps are separated into modules so the full experiment can be reviewed and rerun easily.
