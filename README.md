@@ -3,9 +3,10 @@
 This repository presents a modular machine-learning pipeline developed for the Next Day Air Temperature Forecast Challenge, a Kaggle-based course project for Machine Learning 1 at Seoul National University of Science and Technology in Spring 2025.
 
 <p align="center">
-  <img src="image/kaggle_competition.png" width="400" alt="Kaggle competition">
+  <img src="image/kaggle_competition.png" width="300" alt="Kaggle competition">
+  [Competition Page](https://www.kaggle.com/competitions/next-day-air-temperature-forecast-challenge-2/data)
 </p>
-[Competition Page](https://www.kaggle.com/competitions/next-day-air-temperature-forecast-challenge-2/data)
+
 
 
 The goal of the competition was to predict the next day’s average temperature anomaly using hourly meteorological observations collected during the current day.
