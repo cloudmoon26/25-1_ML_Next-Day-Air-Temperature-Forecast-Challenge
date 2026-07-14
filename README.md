@@ -1,9 +1,17 @@
-# Next-Day Air Temperature Residual Forecast
+# Next-Day Air Temperature Forecast Challenge
 
-This repository contains a modular machine-learning pipeline for a Kaggle-style weather forecasting challenge. The goal is to predict the next day’s average temperature anomaly from hourly meteorological observations collected during the current day.
+This repository presents a modular machine-learning pipeline developed for the Next Day Air Temperature Forecast Challenge, a Kaggle-based course project for Machine Learning 1 at Seoul National University of Science and Technology in Spring 2025.
+
+<p align="center">
+  <img src="image/kaggle_competition_overview.png" width="850" alt="Kaggle competition overview">
+</p>
+
+[Competition Page](https://www.kaggle.com/competitions/next-day-air-temperature-forecast-challenge-2/data)
+
+
+The goal of the competition was to predict the next day’s average temperature anomaly using hourly meteorological observations collected during the current day.
 
 The target is not the raw next-day temperature. It is the residual value below:
-
 ```text
 target = next_day_average_temperature - climatology_temp
 ```
@@ -132,7 +140,7 @@ The target distribution also differs between the two groups. Wet rows have mean 
 The final implementation is organized as a reproducible preprocessing, feature-engineering, and split-specific ensemble pipeline.
 
 <p align="center">
-  <img src="image/temperature_pipeline.png" width="1000" alt="Temperature prediction pipeline architecture">
+  <img src="image/temperature_pipeline.jpg" width="1000" alt="Temperature prediction pipeline architecture">
 </p>
 
 ## Repository Structure
