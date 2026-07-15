@@ -1,5 +1,3 @@
-"""Configuration for Next-Day Air Temperature Residual Forecast."""
-
 from __future__ import annotations
 
 RANDOM_STATE = 42
