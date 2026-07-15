@@ -166,23 +166,18 @@ The final implementation is organized as a reproducible preprocessing, feature-e
   <img src="image/temperature_pipeline.jpg" width="1000" alt="Temperature prediction pipeline architecture">
 </p>
 
-The overall workflow follows a Kaggle-style modeling process:
+The overall workflow:
 
 ```text
 Data
  |
- |
 EDA
- |
  |
 Data Cleaning
  |
- |
 Feature Engineering
  |
- |
 Cross Validation
- |
  |
 Base Models
  |
@@ -192,15 +187,11 @@ Base Models
  |
  +---- CatBoost
  |
- |
 OOF Prediction
- |
  |
 Ensemble
  |
- |
 Final Training
- |
  |
 Submission
 ```
